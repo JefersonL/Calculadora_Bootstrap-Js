@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body class="jumbotron">
+    <div class="row">
+        <div class="titulo col-md-6">
+            <h3>Faça</h3>
+            <h2>os</h2>
+            <h1>Cálculos!</h1>
+        </div>
+        <div class="container col-md-6">
+            <!--Corpo da calculadora-->
+            <div class="calculadora">
+            <!--Visor da calculadora-->
+            <label for="visor">Calculator</label>
+            <input type="text" class="form-control" id="visor">
+                <!--Botões da Calculadora-->
+                <div class="row">
+                    <input type="button" class="btn btn-danger" value="C" onclick="limpaVisor()">
+                    <input type="button" class="btn btn-danger" value="<" onclick="limpaNum()">
+                    <input type="button" class="btn btn-secondary" value="/" onclick="inserir('/')">
+                    <input type="button" class="btn btn-secondary" value="X" onclick="inserir('*')">
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-dark" value="7" onclick="inserir(7)">
+                    <input type="button" class="btn btn-dark" value="8" onclick="inserir(8)">
+                    <input type="button" class="btn btn-dark" value="9" onclick="inserir(9)">
+                    <input type="button" class="btn btn-secondary" value="-" onclick="inserir('-')">
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-dark" value="4" onclick="inserir(4)">
+                    <input type="button" class="btn btn-dark" value="5" onclick="inserir(5)">
+                    <input type="button" class="btn btn-dark" value="6" onclick="inserir(6)">
+                    <input type="button" class="mais btn btn-secondary" value="+" onclick="inserir('+')">
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-dark" value="1" onclick="inserir(1)">
+                    <input type="button" class="btn btn-dark" value="2" onclick="inserir(2)">
+                    <input type="button" class="btn btn-dark" value="3" onclick="inserir(3)">
+                </div>
+                <div class="row">
+                    <input type="button" class="btn btn-secondary" value="," onclick="inserir('.')">
+                    <input type="button" class="btn btn-dark" value="0" onclick="inserir(0)">
+                    <input type="button" class="igual btn btn-info" value="=" onclick="igual()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Jeferson Lima</span>
+    </footer>
+</body>
+</html>
